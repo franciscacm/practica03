@@ -3,7 +3,7 @@
 $(document).ready(function(e){	// esperar que el documento este listo
   $('#principal').height($('#page').height()); //calcula la altura del dispositivo con relacion a page
 	document.addEventListener("deviceready",function(){ // espera que el disposivo este listo
-	audio=window.plugins,LowLatencyAudio; // se manda a traer el contructuror de audio y se le asigna a la variable audio
+	audio=window.plugins.LowLatencyAudio; // se manda a traer el contructuror de audio y se le asigna a la variable audio
 	audio.preloadFX('do','audio/DO.mp3', function(){},
 	                function(e){alert('Error '+e);});
 	audio.preloadFX('re','audio/RE.mp3', function(){},
